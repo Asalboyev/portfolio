@@ -32,7 +32,7 @@
     position: relative;
     top: 110px;
     left: 580px;
-    animation: cactusMov 1s infinite linear;
+    animation: cactusMov 1.3s infinite linear;
 
 }
 
@@ -87,6 +87,9 @@
 var cactus = document.getElementById("cactus");
 
 
+document.addEventListener("keydown",function(event){
+    jump();
+});
 document.addEventListener("click",function(event){
     jump();
 });
