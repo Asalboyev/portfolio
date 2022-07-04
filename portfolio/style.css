@@ -2,7 +2,14 @@
 
 :root{
     --yellow:#129bf0;
-
+    --body-tun:#dfe0e5 #000814;
+    --body-kun: ;
+    --tun-toq: #191923;
+    --tun-och: #262432;
+    --tun-sariq: #ffa900;
+    --kun-toq: #f4f4f6;
+    --kun-och: #ffffff;
+    --kun-green: #00dd69;
 }
 
 *{
@@ -47,7 +54,9 @@ section{
     min-height: 100vh;
     padding: 1rem;
 }
+.color-tun-och{
 
+}
 .btn{
     padding: .7rem 3rem ;
     background: #333;
@@ -56,6 +65,14 @@ section{
     margin-top: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
+}
+
+.particles-box{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .btn i{
@@ -93,8 +110,8 @@ header{color: #fff;
 }
 
 header .user img{
-    height: 17rem;
-    width: 17rem;
+    height: 16rem;
+    width: 16rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -377,23 +394,6 @@ background: var(--yellow );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries */
 
 @media (max-width:1200px){
@@ -425,40 +425,37 @@ background: var(--yellow );
     body{
         padding: 0;
     }
-    
+    iframe{
+        width: 100%;
+      }
 }
-
 
 @media (max-width:768px){
 
     header{
         width: 100vw;
     }
-
-  
-    
 }
- 
 
 @media (max-width:400px){
 
     html{
         font-size: 50%;
     }
-
   .heading{
       margin: 0 3rem;
   }
-
   .about .row .counter .box{
       width: 100%;
   }
-
   .education .box-container .box{
       width: 100%;
   }
   .portfolio .box-container .box{
       width: 100%; 
+  }
+  iframe{
+    width: 100%;
   }
     
 }
