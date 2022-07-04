@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dinozavr</title>
+</head>
+<style>
+    
+    .game {
+    width: 600px;
+    height: 200px;
+    border-bottom:  1px solid #000;
+    margin: auto;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(./dino2.png);
+    background-size:  50px 50px;
+    position: relative;
+    top: 150px;
+
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(./xMf9sx.png);
+    background-size:  20px 40px;     
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1.3s infinite linear;
+
+}
+
+@keyframes cactusMov{
+    0% {
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+
+
+@keyframes jump{
+    0% {
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+</style>
+<body>
+    <!-- <h3>Axror Asalbayev tomonidan </h3> -->
+    <div class="game">
+        <div id="dino"></div>
+        <div id="cactus"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+    var dino = document.getElementById("dino");
+var cactus = document.getElementById("cactus");
+
+
+document.addEventListener("keydown",function(event){
+    jump();
+});
+document.addEventListener("click",function(event){
+    jump();
+});
+
+function jump () {
+    if (dino.classList !="jump") {
+        dino.classList.add("jump")
+    }
+    setTimeout(function(){
+        dino.classList.remove("jump")
+    },275)
+}
+
+
+let isAlive = setInterval( function(){
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left")); 
+
+    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >=140) {
+        alert("GAME OVER!!")
+    }
+}, 10)
+</script>
+</body>
+</html>
