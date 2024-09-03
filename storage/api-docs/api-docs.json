@@ -1,0 +1,301 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My API",
+        "description": "API documentation using Swagger",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/faqs": {},
+        "/api/otzivis": {},
+        "/api/portfolios": {},
+        "/api/posts": {},
+        "/api/services": {},
+        "/api/teams": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "c670238853ec3a3117dbec73032ec126",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/zayavkas": {},
+        "/api/faqs/": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "fdb6f17830fee1ccd683fcb3ee55ccf4",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/info/": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "312d7fa52e07bb920f30c38713fa7ec5",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/faqs/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "937cbd01aaba46aaec787b0489e2df79",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/partners": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "d2f5b1ee8f50962d7ef84d5b0eb3f875",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/partners/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "d84bed521ab02de544d86f9015755be2",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/portfolios/": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "7132f9b3802beef03d5ddd6a24e186ad",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/portfolios/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "d09ea4699d5554b97cf7d37851199f9e",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/posts/": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "d3736e03cd3d1c5c7b67db654db0d30e",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/posts/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "142b5adb0520cca80cedfe09d9298332",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/services/": {
+            "get": {
+                "summary": "Get list of reviews",
+                "operationId": "cb005c6a8bfd84ec82203d49034721d4",
+                "responses": {
+                    "200": {
+                        "description": "A list of reviews"
+                    }
+                }
+            }
+        },
+        "/api/services/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "a55ba44f6d80dadcc0547de01492bcfd",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/teams/{id}": {
+            "get": {
+                "summary": "Get a review by ID",
+                "operationId": "565c2c0ddda3a3c79c07c1186147bf94",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A review"
+                    },
+                    "404": {
+                        "description": "Review not found"
+                    }
+                }
+            }
+        },
+        "/api/zayavka": {
+            "post": {
+                "tags": [
+                    "Zayavka"
+                ],
+                "summary": "Create a new zayavka",
+                "operationId": "7d9ddb3924032e470b15d42816209fb3",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Zayavka"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Zayavka": {
+                "required": [
+                    "first_name",
+                    "phone_number",
+                    "descriptions"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": "1"
+                    },
+                    "first_name": {
+                        "type": "string",
+                        "example": "John"
+                    },
+                    "phone_number": {
+                        "type": "string",
+                        "example": "+123456789"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Zayavka",
+            "description": "Zayavka"
+        }
+    ]
+}
